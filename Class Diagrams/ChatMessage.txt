@@ -1,0 +1,28 @@
++------------------------------------+
+| ChatMessage                        |
++------------------------------------+
+| - content: String                  |
+| - sender: String                   |
+| - type: MessageType                |
++------------------------------------+
+| + getContent(): String             |
+| + setContent(content: String): void|
+| + getSender(): String              |
+| + setSender(sender: String): void  |
+| + getType(): MessageType           |
+| + setType(type: MessageType): void |
++------------------------------------+
+| + ChatMessage()                    |
++------------------------------------+
+|        MessageType                 |
++------------------------------------+
+| + CHAT: MessageType                |
+| + LEAVE: MessageType               |
+| + JOIN: MessageType                |
++------------------------------------+
+
+The diagram shows a single class ChatMessage with three private fields content, sender, and type. type is an enumeration MessageType with three values: CHAT, LEAVE, and JOIN.
+
+The class also has six public methods for accessing and setting the private fields. Note that MessageType is a static nested enum that is used to specify the type of the chat message.
+
+Overall, this class diagram shows the ChatMessage model that is used to represent chat messages in a Spring Boot WebSocket application.

@@ -1,0 +1,17 @@
++------------------------------------+
+| WsConfig                           |
++------------------------------------+
+|                                    |
+| + registerStompEndpoints(registry: StompEndpointRegistry): void |
+| + configureMessageBroker(registry: MessageBrokerRegistry): void |
++------------------------------------+
+| + WsConfig()                       |
++------------------------------------+
+
+The diagram shows a single class WsConfig with two methods registerStompEndpoints and configureMessageBroker, both of which override methods defined in the WebSocketMessageBrokerConfigurer interface. The @Configuration annotation indicates that this class provides Spring configuration.
+
+The registerStompEndpoints method registers a Stomp WebSocket endpoint with the specified path and SockJS fallback options. The configureMessageBroker method configures the message broker to enable simple broker with topic prefix and application destination prefix.
+
+Note that WebSocketMessageBrokerConfigurer is a Spring interface that provides methods for configuring WebSocket message handling with message brokers.
+
+Overall, this class diagram shows the configuration for the WebSocket message broker using WsConfig class in a Spring Boot application.

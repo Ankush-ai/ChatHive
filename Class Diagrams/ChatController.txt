@@ -1,0 +1,15 @@
++------------------------------------+
+| ChatController                     |
++------------------------------------+
+|                                    |
+| + register(chatMessage: ChatMessage, headerAccessor: SimpMessageHeaderAccessor): ChatMessage |
+| + sendMessage(chatMessage: ChatMessage): ChatMessage |
++------------------------------------+
+| + ChatController()                  |
++------------------------------------+
+
+he diagram shows a single class ChatController with two methods register and sendMessage. The @Controller annotation indicates that this class is a Spring MVC controller.
+
+The register method maps the incoming message to the /chat.register endpoint and sets the sender's username in the session attributes using SimpMessageHeaderAccessor. It then returns the chat message object. The sendMessage method maps the incoming message to the /chat.send endpoint and simply returns the chat message object.
+
+Note that @MessageMapping and @SendTo annotations are used to specify the mapping of incoming messages to message-handling methods and the destination for the outgoing messages respectively. @Payload is used to indicate that the method parameter should be bound to the payload of the incoming message.

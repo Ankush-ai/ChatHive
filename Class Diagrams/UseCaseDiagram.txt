@@ -1,0 +1,17 @@
++-----------------+
+|    User         |
++-----------------+
+| - Enter chatroom|
+| - Send message  |
+| - Receive message|
++-----------------+
+         |              
++-----------------+    
+|   Chatroom      |    
++-----------------+    
+| - Display chat  |    
+| - Broadcast     |    
+|   message       |    
++-----------------+
+
+In this use case diagram, we have two actors: the User and the Chatroom. The User can enter the chatroom, send messages, and receive messages. The Chatroom can display the chat, and broadcast messages to all users.

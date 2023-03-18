@@ -1,0 +1,10 @@
++------------------------------------+
+| SpringBootWebsocketApplication     |
++------------------------------------+
+|                                    |
+| + main(args: String[]): void       |
++------------------------------------+
+
+he diagram shows a single class SpringBootWebsocketApplication with one static method main that takes an array of String arguments and returns void. The class is annotated with @SpringBootApplication, which is used to enable auto-configuration and component scanning in the Spring Boot application.
+
+Note that the SpringApplication.run() method starts the Spring Boot application and initializes the Spring application context. However, this method is not explicitly defined in the SpringBootWebsocketApplication class, but rather inherited from the SpringApplication class provided by the Spring Boot framework.
